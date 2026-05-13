@@ -178,4 +178,25 @@ while True:
 
         valor_desconto = valor_bruto_venda * (percentual / 100)
         valor_final = valor_bruto_venda - valor_desconto
+        print(f"Desconto aplicado: {percentual}%")
+        print(f"Valor do desconto: R$ {valor_desconto:.2f}")
+        print(f"Valor final da venda: R$ {valor_final:.2f}")
 
+        # Acumular de informações
+        total_vendas += 1
+        total_bruto += valor_bruto_venda
+        total_descontos += valor_desconto
+        total_liquido += valor_final
+
+    elif opcao == '2':
+        # Ver resumo parcial
+        if total_vendas == 0:
+            print("\nNenhuma venda registrada até o momento.")
+        else:
+            print("\n=== RESUMO PARCIAL ===")
+            print(f"Total de vendas realizadas: {total_vendas}")
+            print(f"Total bruto vendido: R$ {total_bruto:.2f}")
+            print(f"Total de descontos concedidos: R$ {total_descontos:.2f}")
+            print(f"Total líquido vendido: R$ {total_liquido:.2f}")
+
+    
