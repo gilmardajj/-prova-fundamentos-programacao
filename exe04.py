@@ -32,6 +32,7 @@ alunos = [
     ["Bento", [3.0, 4.0, 2.5]],
     ["Rute", [2.0, 3.0, 2.2]],
     ["Rafael",[7.0, 10.0, 8.5]],
+    ["Ricardo", [5.0, 6.5, 4.8],]
 ]
 
 # Inicializa as três listas solicitadas
