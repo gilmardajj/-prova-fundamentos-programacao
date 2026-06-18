@@ -63,3 +63,5 @@ print(nome)      # Imprime o nome (Bruno)
 print(idade)     # Imprime a idade (18)
 print(profissao) # Imprime a profissão (professor)
 
+# tupla
+
